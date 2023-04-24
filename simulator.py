@@ -1,6 +1,7 @@
 import copy
 import cupy as cp
 import csv
+import os
 import random
 from typing import List
 
@@ -106,6 +107,7 @@ class ParallelSearch:
     
     def recordResults(self,
                       results_file: str):
+        os.makedirs("/".join(results_file.split["/"][:-1]), exist_ok=True)
         self.record_results = True
         self.results_file = results_file
         self.results_headers = ["threshold", "time", "discharge rate"]
