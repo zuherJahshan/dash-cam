@@ -11,30 +11,15 @@ particularly for the identification and classification of viral pathogens of epi
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Configuration](#configuration)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Acknowledgements](#acknowledgements)
-
----
-
-## Features
-
-- Simulates the behavior of [specific component].
-- Supports [specific protocols or standards].
-- Provides detailed logging and statistics.
-- [Other notable features].
-
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Usage](#usage)
 ---
 
 ## Prerequisites
 
-- Operating System: [e.g., Linux, Windows, macOS].
-- [Other dependencies, e.g., "Python >= 3.6", "gcc >= 9.0"].
+- Operating System: Linux.
+- Other dependencies, "Python >= 3.11", "conda >= 23.5".
 
 ---
 
@@ -42,32 +27,21 @@ particularly for the identification and classification of viral pathogens of epi
 
 ```bash
 # Clone the repository
-git clone [repository URL]
+git clone git@github.com:zuherJahshan/dash-cam.git
 
 # Navigate to the directory
-cd [repository-name]
+cd dash-cam
 
 # Install the required dependencies
-[specific instructions, e.g., "pip install -r requirements.txt"]
+conda env create -f environment.yaml
 
-# Compile/build the simulator
-[specific build instructions]
+# Activate the environment
+conda activate dash-cam
 ```
 
 ---
 
 ## Usage
 
-```bash
-# Basic usage
-./hardware_simulator [options]
+As an example of usage, please refer to the lab.ipynb file
 
-# For detailed usage options
-./hardware_simulator --help
-```
-
----
-
-## Configuration
-
-You can configure the simulator using the `config.yaml` file located in the `
